@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("nexora-theme");
+    if (!t && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) t = "dark";
+    if (t === "dark") document.documentElement.setAttribute("data-theme", "dark");
+  } catch (e) {}
+})();
+</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" data-institute-favicon href="favicon.png" />
+<title>Verify Certificate | {{INSTITUTE_NAME}}</title>
+<meta name="description" content="Verify a {{INSTITUTE_NAME}} certificate using its Certificate ID." />
+<link rel="canonical" href="#" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main>
+  <section class="page-hero container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="certificates.html">Certificates</a> / Verify</div>
+    <h1>Verify a Certificate</h1>
+    <p class="lede">Enter a Certificate ID below to check its validity.</p>
+  </section>
+
+  <section class="section" style="border-top:none; padding-top:0;">
+    <div class="container" style="max-width:640px;">
+      <form data-verify-form novalidate>
+        <div class="form-group">
+          <label for="cert-id">Certificate ID</label>
+          <input class="form-control" type="text" id="cert-id" placeholder="e.g. NSA-DA-26-00142" data-verify-input required />
+        </div>
+        <button class="btn btn-secondary" type="submit">Verify Certificate</button>
+      </form>
+
+      <p class="text-muted" style="font-size:0.85rem; margin-top:1rem;">
+        Try a sample ID:
+        <span data-sample-cert-buttons></span>
+      </p>
+
+      <div data-verify-result class="hidden"></div>
+
+      <div class="card" style="margin-top:2.5rem;">
+        <h4>About This Demo</h4>
+        <p class="text-muted mb-0" style="font-size:0.85rem;">This verification tool currently checks a small set of sample records for demonstration purposes only. Before real certificates are issued, this will be connected to a secure backend and database. No real student data is used here.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/components.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/certificate.js"></script>
+<script src="../js/forms.js"></script>
+</body>
+</html>

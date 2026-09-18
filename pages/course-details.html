@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("nexora-theme");
+    if (!t && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) t = "dark";
+    if (t === "dark") document.documentElement.setAttribute("data-theme", "dark");
+  } catch (e) {}
+})();
+</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" data-institute-favicon href="favicon.png" />
+<title>Course Details | {{INSTITUTE_NAME}}</title>
+<meta name="description" content="Detailed curriculum, skills, projects and career outcomes for {{INSTITUTE_NAME}} courses." />
+<link rel="canonical" href="#" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main>
+  <section class="section" style="padding-top: clamp(2rem, 5vw, 3rem);">
+    <div class="container" data-course-details>
+      <!-- Rendered dynamically by js/courses.js based on ?id= -->
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+
+
+
+
+
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/components.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/courses.js"></script>
+<script src="../js/forms.js"></script>
+</body>
+</html>

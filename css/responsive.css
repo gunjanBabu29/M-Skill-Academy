@@ -1,0 +1,69 @@
+/* =========================================================================
+   NEXORA — RESPONSIVE RULES
+   Mobile-first overrides layered on top of style.css.
+   Tested against 320 / 375 / 425 / 768 / 1024 / 1280 / 1440 / 1920.
+   ========================================================================= */
+
+/* ----- Large desktop polish ----- */
+@media (min-width: 1440px) {
+  :root { --container-width: 1260px; }
+}
+
+/* ----- Collapse nav to hamburger earlier: 8 nav items + CTA + toggle
+   need more room than a typical nav, so switch before it gets cramped ----- */
+@media (max-width: 1320px) {
+  .main-nav { display: none; }
+  .hamburger { display: flex; }
+}
+
+/* ----- Tablet (<=1024px) ----- */
+@media (max-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1.2fr 1fr 1fr; }
+  .footer-grid .footer-col:last-child { grid-column: span 1; }
+  .roadmap-desktop { grid-template-columns: repeat(6, 1fr); row-gap: 2rem; }
+  .roadmap-desktop::before { display: none; }
+  .method-steps { grid-template-columns: repeat(3, 1fr); row-gap: 2rem; }
+  .filter-row { grid-template-columns: 1fr 1fr; }
+}
+
+/* ----- Small tablet / large phone (<=768px) ----- */
+@media (max-width: 768px) {
+  .main-nav { display: none; }
+  .hamburger { display: flex; }
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-check-list { gap: 0.5rem 1rem; }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-2 { grid-template-columns: 1fr; }
+  .stats-row { grid-template-columns: repeat(2, 1fr); row-gap: 1.6rem; }
+  .footer-grid { grid-template-columns: 1fr 1fr; row-gap: 2rem; }
+  .roadmap-desktop { display: none; }
+  .roadmap-mobile { display: block; }
+  .method-steps { grid-template-columns: 1fr; row-gap: 1.6rem; }
+  .career-flow { justify-content: flex-start; }
+  .verify-grid { grid-template-columns: 1fr; }
+  .header-actions .btn-secondary { display: none; }
+  .filter-row { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .trust-bar-inner { justify-content: flex-start; }
+}
+
+/* ----- Phones (<=425px) ----- */
+@media (max-width: 425px) {
+  .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .site-header .container { height: 68px; }
+  .brand-sub { display: none; }
+  .hero-cta-row .btn { flex: 1 1 100%; }
+  .program-card-actions .btn { flex: 1 1 auto; }
+  .whatsapp-float { width: 50px; height: 50px; bottom: 1rem; right: 1rem; }
+  .back-to-top { width: 40px; height: 40px; bottom: 1rem; left: 1rem; }
+  .stats-row { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+
+/* ----- Very small phones (<=375px handled by base fluid units already) ----- */
+@media (max-width: 375px) {
+  .container { padding: 0 1rem; }
+  .certificate-preview .cert-title { font-size: 1.5rem; }
+}

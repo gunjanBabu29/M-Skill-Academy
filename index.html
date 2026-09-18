@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("nexora-theme");
+    if (!t && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) t = "dark";
+    if (t === "dark") document.documentElement.setAttribute("data-theme", "dark");
+  } catch (e) {}
+})();
+</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" data-institute-favicon href="favicon.png" />
+<title>{{INSTITUTE_NAME}} | Skill Development & Career Training in Jaipur</title>
+<meta name="description" content="Professional offline training in Data Analytics, Data Science, Python, Web Development, Spoken English, French and Career Readiness at {{INSTITUTE_NAME}}, Jaipur." />
+<meta name="keywords" content="Skill Development Institute, Career Development Academy, Data Analytics Course, Data Science Course, Python Course, Web Development Course, Spoken English Course, Career Readiness, Jaipur Training Institute" />
+<link rel="canonical" href="#" />
+<meta property="og:title" content="{{INSTITUTE_NAME}}" />
+<meta property="og:description" content="Learn Skills. Build Confidence. Become Career Ready." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+<!-- ============================= HEADER ============================= -->
+<div id="site-header"></div>
+
+<main>
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero container">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-eyebrow"><i data-lucide="sparkles" width="16" height="16"></i> Skill Development &amp; Career Readiness Institute</span>
+        <h1>Build Skills. Build Confidence. Build Your Career.</h1>
+        <p class="lede">Practical, career-focused training in Technology, Data, Communication, Languages and Professional Skills — designed to help students become confident and career ready.</p>
+        <div class="hero-cta-row">
+          <a href="pages/programs.html" class="btn btn-primary">Explore Programs</a>
+          <button class="btn btn-outline" data-modal-open="counsellingModal">Book Free Counselling</button>
+        </div>
+        <ul class="hero-check-list">
+          <li><i data-lucide="check-circle" width="18" height="18"></i> Practical Training</li>
+          <li><i data-lucide="check-circle" width="18" height="18"></i> Small Batches</li>
+          <li><i data-lucide="check-circle" width="18" height="18"></i> Project-Based Learning</li>
+          <li><i data-lucide="check-circle" width="18" height="18"></i> Career Support</li>
+        </ul>
+      </div>
+
+      <div class="report-card reveal">
+        <div class="report-card-head">
+          <div>
+            <div class="report-card-title">Career Readiness Report</div>
+            <div class="text-muted" style="font-size:0.78rem;">Sample student progress view</div>
+          </div>
+          <span class="report-card-tag">In Training</span>
+        </div>
+        <div class="report-row">
+          <div class="report-row-label"><span>Skills</span><span>Building</span></div>
+          <div class="report-bar"><span style="width:78%"></span></div>
+        </div>
+        <div class="report-row">
+          <div class="report-row-label"><span>Projects</span><span>In progress</span></div>
+          <div class="report-bar accent"><span style="width:62%"></span></div>
+        </div>
+        <div class="report-row">
+          <div class="report-row-label"><span>Assessment</span><span>On track</span></div>
+          <div class="report-bar"><span style="width:85%"></span></div>
+        </div>
+        <div class="report-row">
+          <div class="report-row-label"><span>Career Readiness</span><span>Developing</span></div>
+          <div class="report-bar accent"><span style="width:54%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= TRUST BAR ============================= -->
+  <section class="trust-bar container">
+    <div class="trust-bar-inner" data-trust-bar></div>
+  </section>
+
+  <!-- ============================= ABOUT ============================= -->
+  <section class="section" id="about">
+    <div class="container grid grid-2" style="align-items:center;">
+      <div class="reveal">
+        <span class="section-kicker">About Nexora</span>
+        <h2>More Than a Coaching Centre</h2>
+        <p><span data-institute-name>Nexora Skills &amp; Career Academy</span> is designed to bridge the gap between academic education and real-world career requirements.</p>
+        <p class="text-muted">Students need more than certificates. They need skills, confidence, communication, projects, professional behaviour and genuine career preparation — which is why every course here is built around doing, not just listening.</p>
+        <a href="pages/about.html" class="btn btn-outline">Discover Our Approach</a>
+      </div>
+      <div class="grid grid-2 reveal">
+        <div class="card"><i data-lucide="layers" width="22" height="22" style="color:var(--secondary);"></i><h4 style="margin-top:0.8rem;">Skills</h4><p class="text-muted mb-0" style="font-size:0.85rem;">Practical, industry-oriented training.</p></div>
+        <div class="card"><i data-lucide="folder-check" width="22" height="22" style="color:var(--secondary);"></i><h4 style="margin-top:0.8rem;">Projects</h4><p class="text-muted mb-0" style="font-size:0.85rem;">A portfolio you can actually show.</p></div>
+        <div class="card"><i data-lucide="mic" width="22" height="22" style="color:var(--secondary);"></i><h4 style="margin-top:0.8rem;">Confidence</h4><p class="text-muted mb-0" style="font-size:0.85rem;">Built through practice, not theory.</p></div>
+        <div class="card"><i data-lucide="compass" width="22" height="22" style="color:var(--secondary);"></i><h4 style="margin-top:0.8rem;">Career Prep</h4><p class="text-muted mb-0" style="font-size:0.85rem;">Resume, interviews &amp; guidance.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= COURSE CATEGORIES ============================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-kicker">What You Can Learn</span>
+        <h2>Five Tracks. One Career Focus.</h2>
+        <p class="lede mx-auto">Every course sits inside a track built around a real skill area — not a random list of subjects.</p>
+      </div>
+      <div class="grid grid-3" data-category-grid></div>
+    </div>
+  </section>
+
+  <!-- ============================= FEATURED PROGRAMS ============================= -->
+  <section class="section" id="programs">
+    <div class="container">
+      <div class="flex-between reveal" style="align-items:flex-end; flex-wrap:wrap; gap:1rem;">
+        <div class="section-header" style="margin-bottom:1.5rem;">
+          <span class="section-kicker">Flagship Programs</span>
+          <h2>Career-Focused, Project-Driven Programs</h2>
+        </div>
+        <a href="pages/programs.html" class="btn-ghost">View all programs</a>
+      </div>
+      <div class="grid grid-2" data-featured-programs></div>
+    </div>
+  </section>
+
+  <!-- ============================= DATA SCIENCE ROADMAP ============================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-kicker">The Flagship 11-Month Track</span>
+        <h2>Professional Data Science &amp; AI Career Program</h2>
+        <p class="lede mx-auto">Eleven months, eleven stages — from your first line of Python to a deployed, portfolio-ready capstone.</p>
+      </div>
+      <div class="roadmap-desktop" data-roadmap-desktop></div>
+      <div class="roadmap-mobile" data-roadmap-mobile></div>
+    </div>
+  </section>
+
+  <!-- ============================= LEARNING METHODOLOGY ============================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-kicker">How We Teach</span>
+        <h2>Learn by Doing</h2>
+      </div>
+      <div class="method-steps" data-methodology></div>
+    </div>
+  </section>
+
+  <!-- ============================= WHY CHOOSE US ============================= -->
+  <section class="section" id="why-us">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-kicker">Why Nexora</span>
+        <h2>Why Choose Us</h2>
+      </div>
+      <div class="grid grid-4" data-why-us></div>
+    </div>
+  </section>
+
+  <!-- ============================= CAREER SUPPORT ============================= -->
+  <section class="section">
+    <div class="container grid grid-2" style="align-items:flex-start;">
+      <div class="reveal">
+        <span class="section-kicker">Career Assistance</span>
+        <h2>From Learning to Career Readiness</h2>
+        <div class="career-flow" data-career-flow></div>
+        <ul data-career-services></ul>
+      </div>
+      <div class="card reveal">
+        <h4>An Important Note</h4>
+        <p class="text-muted" style="font-size:0.92rem;">We provide structured career assistance — resume building, mock interviews, LinkedIn optimization and job search guidance. We do not offer or promise a "100% placement guarantee," and we encourage you to be cautious of any institute that does.</p>
+        <a href="pages/contact.html" class="btn btn-outline btn-sm">Talk to a Counsellor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= PROJECT SHOWCASE ============================= -->
+  <section class="section">
+    <div class="container">
+      <div class="flex-between reveal" style="align-items:flex-end; flex-wrap:wrap; gap:1rem;">
+        <div class="section-header" style="margin-bottom:1.5rem;">
+          <span class="section-kicker">Student Project Examples</span>
+          <h2>What You Could Build Here</h2>
+        </div>
+        <a href="pages/projects.html" class="btn-ghost">View all projects</a>
+      </div>
+      <div class="grid grid-3" data-projects-grid></div>
+    </div>
+  </section>
+
+  <!-- ============================= TRAINERS ============================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-kicker">Faculty</span>
+        <h2>Learn From People Who've Done the Work</h2>
+        <p class="lede mx-auto">Sample faculty profiles shown below — full trainer details are shared during counselling.</p>
+      </div>
+      <div class="grid grid-4" data-trainers-grid></div>
+    </div>
+  </section>
+
+  <!-- ============================= TESTIMONIALS ============================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-kicker">Student Voices</span>
+        <h2>Sample Student Testimonials</h2>
+      </div>
+      <div data-testimonial-slider></div>
+    </div>
+  </section>
+
+  <!-- ============================= CERTIFICATION ============================= -->
+  <section class="section">
+    <div class="container grid grid-2" style="align-items:center;">
+      <div class="reveal">
+        <span class="section-kicker">Certification</span>
+        <h2>Certificates That Can Be Verified</h2>
+        <p>Students who successfully complete a course's assessment requirements receive an institute-issued Certificate of Completion.</p>
+        <p class="text-muted">Every certificate carries a unique ID and can be checked on our verification page — no accreditation claims, just a transparent record.</p>
+        <a href="pages/certificates.html" class="btn btn-outline">See Certificate Details</a>
+        <a href="pages/verify.html" class="btn btn-ghost">Verify a Certificate</a>
+      </div>
+      <div class="certificate-preview reveal">
+        <div class="cert-inst" data-institute-name>{{INSTITUTE_NAME}}</div>
+        <div class="cert-title">Certificate of Completion</div>
+        <p class="text-muted" style="font-size:0.85rem;">This is to certify that the recipient has successfully completed the requirements of the program.</p>
+        <div class="qr-placeholder">QR Code</div>
+        <div class="cert-id">Certificate ID: <span data-cert-sample-id>NSA-DA-26-00142</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= STATS ============================= -->
+  <section class="section-tight section">
+    <div class="container">
+      <div class="stats-row" data-stats-row></div>
+    </div>
+  </section>
+
+  <!-- ============================= FAQ TEASER ============================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-kicker">Questions</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div style="max-width:760px; margin:0 auto;" data-faq-list></div>
+      <div class="text-center" style="margin-top:2rem;">
+        <a href="pages/faq.html" class="btn-ghost">View all FAQs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= CONTACT / CTA ============================= -->
+  <section class="section" id="contact">
+    <div class="container grid grid-2" style="align-items:center;">
+      <div class="reveal">
+        <span class="section-kicker">Get In Touch</span>
+        <h2>Ready to Start? Book a Free Counselling Session.</h2>
+        <p class="text-muted">Talk through your goals, current level and the right track for you — no pressure, no obligation.</p>
+        <ul style="margin-bottom:1.5rem;">
+          <li class="flex gap-sm" style="align-items:center; margin-bottom:0.7rem;"><i data-lucide="map-pin" width="18" height="18" style="color:var(--secondary);"></i><span data-institute-address>Jaipur, Rajasthan, India</span></li>
+          <li class="flex gap-sm" style="align-items:center; margin-bottom:0.7rem;"><i data-lucide="phone" width="18" height="18" style="color:var(--secondary);"></i><a data-institute-phone data-institute-phone-href>+91 XXXXX XXXXX</a></li>
+          <li class="flex gap-sm" style="align-items:center;"><i data-lucide="mail" width="18" height="18" style="color:var(--secondary);"></i><a data-institute-email data-institute-email-href href="mailto:">info@nexoraacademy.example</a></li>
+        </ul>
+        <button class="btn btn-secondary" data-modal-open="counsellingModal">Book Free Counselling</button>
+      </div>
+      <div class="card reveal" style="height:280px; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg, var(--surface-tint), var(--background));">
+        <span class="text-muted" style="font-size:0.9rem;"><i data-lucide="map" width="20" height="20"></i> Map will be embedded here</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================= FOOTER ============================= -->
+<div id="site-footer"></div>
+
+<!-- ============================= FLOATING ACTIONS ============================= -->
+
+<!-- ============================= MODALS ============================= -->
+
+
+
+
+
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+<script src="js/forms.js"></script>
+</body>
+</html>

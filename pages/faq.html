@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("nexora-theme");
+    if (!t && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) t = "dark";
+    if (t === "dark") document.documentElement.setAttribute("data-theme", "dark");
+  } catch (e) {}
+})();
+</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" data-institute-favicon href="favicon.png" />
+<title>FAQ | {{INSTITUTE_NAME}}</title>
+<meta name="description" content="Frequently asked questions about courses, batches, certificates and career assistance at {{INSTITUTE_NAME}}." />
+<link rel="canonical" href="#" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main>
+  <section class="page-hero container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / FAQ</div>
+    <h1>Frequently Asked Questions</h1>
+    <p class="lede">Everything you need to know before you join.</p>
+  </section>
+
+  <section class="section" style="border-top:none; padding-top:0;">
+    <div class="container" style="max-width:800px;">
+      <div data-faq-list></div>
+    </div>
+  </section>
+
+  <section class="section text-center">
+    <div class="container">
+      <h2>Still Have a Question?</h2>
+      <p class="lede mx-auto">Book a free counselling session and we'll walk you through everything.</p>
+      <button class="btn btn-secondary" data-modal-open="counsellingModal">Book Free Counselling</button>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/components.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/forms.js"></script>
+</body>
+</html>

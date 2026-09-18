@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("nexora-theme");
+    if (!t && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) t = "dark";
+    if (t === "dark") document.documentElement.setAttribute("data-theme", "dark");
+  } catch (e) {}
+})();
+</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" data-institute-favicon href="favicon.png" />
+<title>Contact Us | {{INSTITUTE_NAME}}</title>
+<meta name="description" content="Get in touch with {{INSTITUTE_NAME}} — address, phone, email, WhatsApp and enquiry form." />
+<link rel="canonical" href="#" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main>
+  <section class="page-hero container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / Contact</div>
+    <h1>Get In Touch</h1>
+    <p class="lede">Have a question, or want to talk through the right course for you? Reach out any of the ways below.</p>
+  </section>
+
+  <section class="section" style="border-top:none; padding-top:0;">
+    <div class="container grid grid-2" style="align-items:flex-start;">
+      <div>
+        <div class="card" style="margin-bottom:1.5rem;">
+          <h4><i data-lucide="map-pin" width="18" height="18" style="color:var(--secondary); vertical-align:-3px;"></i> Address</h4>
+          <p class="text-muted mb-0" data-institute-address>Jaipur, Rajasthan, India</p>
+        </div>
+        <div class="card" style="margin-bottom:1.5rem;">
+          <h4><i data-lucide="phone" width="18" height="18" style="color:var(--secondary); vertical-align:-3px;"></i> Phone</h4>
+          <p class="mb-0"><a data-institute-phone data-institute-phone-href>+91 XXXXX XXXXX</a></p>
+        </div>
+        <div class="card" style="margin-bottom:1.5rem;">
+          <h4><i data-lucide="mail" width="18" height="18" style="color:var(--secondary); vertical-align:-3px;"></i> Email</h4>
+          <p class="mb-0"><a data-institute-email data-institute-email-href href="mailto:">info@nexoraacademy.example</a></p>
+        </div>
+        <div class="card" style="margin-bottom:1.5rem;">
+          <h4><i data-lucide="message-circle" width="18" height="18" style="color:var(--secondary); vertical-align:-3px;"></i> WhatsApp</h4>
+          <p class="mb-0"><a data-whatsapp-link="Hi, I'd like to know more about {{INSTITUTE_NAME}}." target="_blank" rel="noopener">Chat with us on WhatsApp</a></p>
+        </div>
+        <div class="card">
+          <h4><i data-lucide="clock" width="18" height="18" style="color:var(--secondary); vertical-align:-3px;"></i> Opening Hours</h4>
+          <p style="margin-bottom:0.3rem;">Monday – Saturday: 9:00 AM – 7:00 PM</p>
+          <p class="mb-0">Sunday: By appointment</p>
+        </div>
+
+        <div class="card">
+          <h4><i data-lucide="user" width="18" height="18" style="color:var(--secondary); vertical-align:-3px;"></i> Program Counsellor</h4>
+          <p style="margin-bottom:0.3rem; font-weight:600;">Gunjan Kumar</p>
+          <p style="margin-bottom:0.3rem;"><a href="tel:+919334131985">+91 93341 31985</a></p>
+          <p class="mb-0"><a href="mailto:gunjansingh9752@gmail.com">gunjansingh9752@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div>
+        <div class="card" style="height:220px; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg, var(--surface-tint), var(--background)); margin-bottom:1.5rem;">
+          <span class="text-muted" style="font-size:0.9rem;"><i data-lucide="map" width="20" height="5"></i> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.0619745986974!2d75.8033405744386!3d26.846001562956115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5e1e94a6dd5%3A0xc0ced72353375579!2s5%2F216%2C%20Sector%205%2C%20Malviya%20Nagar%2C%20Jaipur%2C%20Rajasthan%20302017!5e1!3m2!1sen!2sin!4v1789636820079!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></span>
+        </div>
+
+        <div class="card">
+          <h3>Send an Enquiry</h3>
+          <form data-enquiry-form novalidate>
+            <div class="form-row">
+              <div class="form-group"><label for="ct-name">Full Name <span class="required">*</span></label><input class="form-control" type="text" id="ct-name" name="fullName" data-validate="name" required /><span class="field-error">This field is required.</span></div>
+              <div class="form-group"><label for="ct-phone">Mobile Number <span class="required">*</span></label><input class="form-control" type="tel" id="ct-phone" name="mobile" data-validate="phone" required /><span class="field-error">This field is required.</span></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label for="ct-email">Email <span class="required">*</span></label><input class="form-control" type="email" id="ct-email" name="email" data-validate="email" required /><span class="field-error">This field is required.</span></div>
+              <div class="form-group"><label for="ct-qualification">Highest Qualification</label><input class="form-control" type="text" id="ct-qualification" name="qualification" /></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="ct-course">Course Interested In</label>
+                <select class="form-control" id="ct-course" name="course" data-enquiry-course><option value="">Select a course</option></select>
+              </div>
+              <div class="form-group">
+                <label for="ct-batch">Preferred Batch</label>
+                <select class="form-control" id="ct-batch" name="batch">
+                  <option value="">Select a preference</option>
+                  <option>Morning</option><option>Afternoon</option><option>Evening</option><option>Weekend</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="ct-time">Preferred Learning Time</label>
+                <input class="form-control" type="text" id="ct-time" name="learningTime" placeholder="e.g. Weekday evenings" />
+              </div>
+              <div class="form-group">
+                <label for="ct-level">Current Skill Level</label>
+                <select class="form-control" id="ct-level" name="skillLevel">
+                  <option value="">Select a level</option>
+                  <option>Beginner</option><option>Some Experience</option><option>Intermediate</option><option>Advanced</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ct-goal">Career Goal</label>
+              <input class="form-control" type="text" id="ct-goal" name="careerGoal" placeholder="e.g. Switch to a data analyst role" />
+            </div>
+            <div class="form-group">
+              <label for="ct-message">Message</label>
+              <textarea class="form-control" id="ct-message" name="message" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+              <label class="checkbox-row"><input type="checkbox" name="consent" required /><span>I agree to be contacted regarding course information and counselling.</span></label>
+              <span class="field-error">Please provide your consent to continue.</span>
+            </div>
+            <button class="btn btn-secondary btn-block" type="submit">Submit Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/components.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/forms.js"></script>
+</body>
+</html>
